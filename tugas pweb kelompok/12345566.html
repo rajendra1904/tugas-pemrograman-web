@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tugas pemrograman webb</title>
+	<style type="text/css">
+	
+		a{
+			text-decoration: none; 
+		  	font-size: 20px;
+		  	font-family: sans-serif;
+		  	padding: 14px 10px;
+		  	margin-top: -100px;
+		  }
+		ul{
+			padding: 40px;
+			padding-left: 1050px;
+
+		  }
+		li{
+			list-style: none; 
+			display: inline;
+		  }
+		li a{
+			 background: #222; 
+			 color:#fc8803;
+			}
+		li a:hover{
+			background: #fc8803; 
+			color:#fff;
+			}
+		.navi{
+			  background: #222; 
+			  height: 100px;
+			  margin-top: -20px;
+			  margin-left: -10px;
+			  margin-right: -8px;
+			  position: center;
+			}
+
+.sub{
+            margin-top: -94px;
+            margin-left: 20px;
+            margin-right: 450px;
+            margin-bottom: 50px;
+            background: #77dd90;
+            padding: 50px 30px 40px 40px; 
+            width: 50px;
+            height: 2px;
+            border-radius: 10px;
+        }
+        .Satu{
+            background: #fc0303;
+            height: 15px;
+            width: 40px;
+            border-radius: 3px;
+            transform: skew(-20deg);
+            transform: skewY(-20deg);
+            margin-top: -30px;
+            margin-left: 0px;
+        }
+        .Dua{
+            background: #fc8803;
+            height: 15px;
+            width: 40px;
+            border-radius: 3px;
+            transform: skew(20deg);
+            transform: skewY(20deg);
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 0px;
+        }
+        .Tiga{
+            background: #ffffff;
+            height: 15px;
+            width: 40px;
+            border-radius: 3px;
+            transform: skew(-20deg);
+            transform: skewY(-20deg);
+            margin-left: 0px;
+            margin-top: -5px;
+        }
+
+.video{
+	z-index: 9999999;
+	position: absolute;
+	margin-top: 10px;
+	background-color: #eae6e6;
+	width: 100%;
+	height: 500px;
+}
+
+.video h1{
+	font-size: 20px;
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 55px;
+	background-color: #fc8803;
+	color: black;
+	padding: 10px;
+}
+
+.video video{
+	margin-top: 90px;
+	width: 600px;
+	margin-left: 650px;
+	position: absolute;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	border: 2px solid #fc8803;
+}
+
+.video .garis{
+	height:10px;
+	width: 900px;
+	background-color: #fc8803;
+	position: absolute;
+	margin-left:100px;
+	margin-top: 90px;
+}
+
+.video p{
+	width: 500px;
+	font-size: 18px;
+	position: absolute;
+	margin-top: 150px;
+	margin-left: 100px;
+	color: black;
+}
+
+.pesan{
+	width: 100%;
+	height: 700px;
+	background-color: #eaeaea;
+	position: absolute;
+	left: 50%;
+	top: 740px;
+	overflow: hidden;
+	transform: translate(-50%,0);
+}
+
+.pesan .garis{
+	width: 600px;
+	height: 10px;
+	background-color: #0066ff;
+	position: absolute;
+	margin-top: 60px;
+	margin-left: 800px;
+}
+
+.pesan select{
+	margin-left: 1090px;
+	position: absolute;
+	width: 180px;
+	height: 30px;
+	margin-top: 80px;
+	cursor: pointer;
+	color: white;
+	background-color: #0066ff;
+}
+
+.pesan select option{
+	background-color: #0066ff;
+}
+
+.pesan h1{
+	color: white;
+	left: 50%;
+	transform: translate(-50%,0);
+	margin-top: 50px;
+	position: absolute;
+}
+
+.pesan img{
+	position: absolute;
+	margin-left: 20px;
+	z-index: 999999999;
+	width: 200px;
+}
+
+.pesan label{
+	display: block;
+	color: white;
+	margin-left: 150px;
+	font-size: 18px;
+}
+
+.pesan input[type="text"]{
+	margin-left: 150px;
+	height: 30px;
+	width: 500px;
+	border: none;
+	font-size: 15px;
+	outline: none;
+	background: transparent;
+	border-bottom: 2px solid white;
+	color: white;
+}
+
+.pesan input[type="submit"]{
+	width: 80px;
+	height: 40px;
+	background-color: #0078ff;
+	color: white;
+	position: absolute;
+	margin-top: 50px;
+	margin-left: -500px;
+	border: 2px solid white;
+	border-radius: 5px;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+.pesan input[type="submit"]:hover{
+	background-color: white;
+	color: #0078ff;
+	border: 2px solid white;
+}
+
+.pesan .nama{
+	display: block;
+	color: white;
+	margin-top: 130px;
+}
+
+.pesan .nama1{
+	text-transform: uppercase;
+}
+
+.pesan .sekolah1{
+	text-transform: uppercase;
+}
+
+.pesan .kelas1{
+	text-transform: uppercase;
+}
+
+
+
+.namaKlik{
+	display: block;
+	color: white;
+	margin-top: 130px;
+}
+
+.pesan .sekolah{
+	margin-top: 20px;
+}
+
+.pesan .kelas{
+	margin-top: 20px;
+}
+
+.pesan .kesan{
+	margin-top: 20px;
+}
+
+.pesan .form{
+	width: 800px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	height: 520px;
+	margin-top: 60px;
+	background-color: #0066ff;
+	position: absolute;
+	left: 42%;
+	transform: translate(-58%,0);
+}
+
+
+.pesan .jumlah{
+	width: 300px;
+	background-color: #0066ff;
+	height: 200px;
+	margin-left: 950px;
+	margin-top: 100px;
+	position: absolute;
+	border-bottom-right-radius: 10px;
+} 
+
+.pesan .jumlah h4{
+	font-size: 20px;
+	color: white;
+	padding-top: -10px;
+	text-align: center;
+}
+
+.jumlah .kotakjumlah{
+	width: 150px;
+	height: 100px;
+	margin-top: -	10px;
+	background-color: white;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
+.jumlah .kotakjumlahback{
+	width: 150px;
+	height: 100px;
+	margin-top: -10px;
+	background-color: #ddd;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0) rotate(5deg);
+}
+
+	</style>
+	
+</head>
+<body>
+
+	<nav class="navi">
+		<ul>
+			<li><a href="#body">Home</a></li>
+			<li><a href="#video">Video</a></li>
+			<li><a href="#pesan">pesan</a></li>
+		</ul>
+	</nav>
+    <div class="hitam">
+        <div class="sub">
+            <div class="gEmpat"></div>
+            <div class="gLima"></div>
+            <div class="Satu"></div>
+            <div class="Dua"></div>
+            <div class="Tiga"></div>
+            
+        </div>
+    </div>	
+
+<section id="video" class="video">
+		<div class="garis"></div>
+		<h1>Selamat Datang</h1>
+		<p>
+		Silahkan Di Tonton videonya Pak Dosen Mohon Maaf Jika Website nya Tidak Bagus Jika Ada Kekurangan 
+		atau Kesalahan Di Website Ini Saya mohon Koreksiannya pak 
+		Terima Kasih.</p>
+		<video width="500px;" controls="controls">
+			<source src="img/film.mp4" type="video/mp4">
+		</video>
+	</section>
+
+<section id="pesan" class="pesan">
+		<p class="garis"></p>
+		<div class="form">
+		<h1>Tinggalkan Pesan</h1>
+		<form action="pesan.php" method="post">
+			<label class="nama">Masukan Nama :</label>
+			<input type="text" class="nama1" name="nama" required autocomplete="off">
+			<label class="sekolah">Prodi :</label>
+			<input type="text" class="sekolah1" name="sekolah" required autocomplete="off">
+			<label class="kelas">Semester :</label>
+			<input type="text" class="kelas1" name="kelas" autocomplete="off">
+			<label class="kesan">Kesan dan Pesan :</label>
+			<input type="text" class="kesan1" name="kesan" required autocomplete="off">
+			<input type="submit" name="submit" value="SUBMIT">
+		</form>
+		</div>
+
+		<div class="jumlah">
+			<h4>Jumlah Pengirim Pesan</h4>
+			<div class="kotakjumlahback"></div>
+			<div class="kotakjumlah"> <h3 style="font-size: 80px; color: #0066ff; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);"> <?php echo $jumlah; ?> </h3> </div>
+		</div>
+
+	</section>
+
+</body>
+</html>
